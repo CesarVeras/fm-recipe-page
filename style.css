@@ -1,0 +1,137 @@
+:root {
+	--nutmeg: hsl(14, 45%, 36%);
+	--dark-raspberry: hsl(332, 51%, 32%);
+	--white: hsl(0, 0%, 100%);
+	--rose-white: hsl(330, 100%, 98%);
+	--eggshell: hsl(30, 54%, 90%);
+	--light-grey: hsl(30, 18%, 87%);
+	--wenge-brown: hsl(30, 10%, 34%);
+	--dark-charcoal: hsl(24, 5%, 18%);
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 16px;
+	font-family: 'Outfit', sans-serif;
+	min-height: 100vh;
+	color: var(--dark-charcoal);
+	background-color: var(--eggshell);
+	position: relative;
+	padding-block: 120px;
+}
+
+h1,
+h2,
+h3 {
+	font-family: 'Young Serif', serif;
+}
+
+h1 {
+	font-size: 40px;
+	margin-bottom: 15px;
+}
+
+h2 {
+	color: var(--nutmeg);
+	font-size: 28px;
+	letter-spacing: 0.4px;
+	margin-bottom: 20px;
+}
+
+p {
+	line-height: 1.5;
+}
+
+strong {
+	color: var(--wenge-brown);
+}
+
+ul,
+ol {
+	padding-left: 25px;
+}
+
+li {
+	padding-left: 15px;
+	margin-bottom: 12px;
+}
+
+ul li:last-of-type,
+ol li:last-of-type {
+	margin-bottom: 0;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+	margin-bottom: 35px;
+	border-radius: 15px;
+}
+
+section {
+	padding-bottom: 12.5px;
+	margin-bottom: 12.5px;
+	border-bottom: 2px solid var(--light-grey);
+}
+
+section:first-of-type,
+section:last-of-type {
+	border-color: transparent;
+}
+
+.content-wrap {
+	background-color: var(--white);
+	max-width: 740px;
+	margin-inline: auto;
+	padding: 40px;
+	border-radius: 25px;
+}
+
+.preparation {
+	margin-top: 26px;
+	background-color: var(--rose-white);
+	padding: 30px;
+}
+
+.preparation h2 {
+	font-size: 18px;
+	margin-bottom: 15px;
+	color: var(--dark-raspberry);
+}
+
+.nutrition p {
+	margin-bottom: 15px;
+}
+
+.nutrition table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.nutrition tr {
+	border-bottom: 2px solid var(--light-grey);
+}
+
+.nutrition td {
+	padding: 5px 20px;
+	color: var(--wenge-brown);
+}
+
+.nutrition td:nth-child(2n) {
+	font-weight: bold;
+	color: var(--nutmeg);
+}
+
+.attribution {
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	translate: -50% 0;
+}
